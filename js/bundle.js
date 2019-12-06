@@ -10445,33 +10445,20 @@ return jQuery;
 
 //CUSTOM JS
 
-__webpack_require__(15);
+__webpack_require__(2);
 // require('imports?this=>window!./jsFiles/wow.js');
-__webpack_require__(16);
-__webpack_require__(17);
-__webpack_require__(18);
-__webpack_require__(19);
-__webpack_require__(20);
-__webpack_require__(21);
-__webpack_require__(22);
+__webpack_require__(3);
+__webpack_require__(4);
+__webpack_require__(5);
+__webpack_require__(6);
+__webpack_require__(7);
+__webpack_require__(8);
+__webpack_require__(9);
 
 //EXTERNAL JS
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11000,7 +10987,7 @@ __webpack_require__(22);
 }).call(window);
 
 /***/ }),
-/* 16 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11047,7 +11034,7 @@ jQuery(document).ready(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11137,7 +11124,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 })(window);
 
 /***/ }),
-/* 18 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11573,7 +11560,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 19 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12576,7 +12563,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 20 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12591,57 +12578,60 @@ $(window).on('load', function () {
     }, 850);
 });
 
+function valName() {
+    var name = document.getElementById('name__input').value;
+
+    if (!name) {
+        document.getElementsByClassName('alert__block')[0].classList.remove("active__alert");
+        document.getElementsByClassName('alert__block-name')[0].classList.add("active__alert");
+        setTimeout(function () {
+            document.getElementsByClassName('alert__block-name')[0].classList.remove("active__alert");
+        }, 5000);
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function valEmail() {
+    var email = document.getElementById('email__input').value;
+    var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (!email) {
+        document.getElementsByClassName('alert__block')[0].classList.remove("active__alert");
+        document.getElementsByClassName('alert__block-email')[0].classList.add("active__alert");
+        setTimeout(function () {
+            document.getElementsByClassName('alert__block-email')[0].classList.remove("active__alert");
+        }, 5000);
+        return false;
+    } else if (!filter.test(email)) {
+        document.getElementsByClassName('alert__block')[0].classList.remove("active__alert");
+        document.getElementsByClassName('alert__block-email-val')[0].classList.add("active__alert");
+        setTimeout(function () {
+            document.getElementsByClassName('alert__block-email-val')[0].classList.remove("active__alert");
+        }, 5000);
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function valMsg() {
+    var text = document.getElementById('text__input').value;
+
+    if (!text) {
+        document.getElementsByClassName('alert__block')[0].classList.remove("active__alert");
+        document.getElementsByClassName('alert__block-msg')[0].classList.add("active__alert");
+        setTimeout(function () {
+            document.getElementsByClassName('alert__block-msg')[0].classList.remove("active__alert");
+        }, 5000);
+        return false;
+    } else {
+        return true;
+    }
+}
+
 $(document).ready(function () {
-    function valName() {
-        var name = $('#name__input').val();
-        if (name == 0) {
-            $('.alert__block').removeClass('active__alert');
-            $('.alert__block-name').addClass('active__alert');
-            setTimeout(function () {
-                $('.alert__block-name').removeClass('active__alert');
-            }, 5000);
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-    function valEmail() {
-        var email = $('#email__input').val();
-        var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (email == 0) {
-            $('.alert__block').removeClass('active__alert');
-            $('.alert__block-email').addClass('active__alert');
-            setTimeout(function () {
-                $('.alert__block-email').removeClass('active__alert');
-            }, 5000);
-            return false;
-        } else if (!filter.test(email)) {
-            $('.alert__block').removeClass('active__alert');
-            $('.alert__block-email-val').addClass('active__alert');
-            setTimeout(function () {
-                $('.alert__block-email-val').removeClass('active__alert');
-            }, 5000);
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-    function valMsg() {
-        var text = $('#text__input').val();
-        if (text == 0) {
-            $('.alert__block').removeClass('active__alert');
-            $('.alert__block-msg').addClass('active__alert');
-            setTimeout(function () {
-                $('.alert__block-msg').removeClass('active__alert');
-            }, 5000);
-            return false;
-        } else {
-            return true;
-        }
-    }
-
     $('.skip-to-main-content').click(function () {
         $(this).blur();
     });
@@ -12672,7 +12662,7 @@ $(document).ready(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12705,7 +12695,7 @@ $(document).ready(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12718,7 +12708,8 @@ var data = {
   },
   oMeni: {
     naslov: 'O meni',
-    tekst: 'Ja sam Isidora Nikolić, živim u Novoj Pazovi!'
+    tekst: 'Ja sam Isidora Nikolić, živim u Novoj Pazovi. Studiram na višoj ICT školi smer Internet tehnologije.',
+    slika: 'img/isidora.png'
   },
   proizvodi: {
     naslov: 'Proizvodi',
@@ -12949,6 +12940,9 @@ var data = {
   }, {
     ime: 'o meni',
     href: 'about.html'
+  }, {
+    ime: 'dokumentacija',
+    href: 'dokumentacija.pdf'
   }]
 };
 
@@ -12956,6 +12950,10 @@ jQuery(document).ready(function () {
   // O meni
   $('.o-meni-naslov').html(data.oMeni.naslov);
   $('.o-meni-tekst').html(data.oMeni.tekst);
+
+  // ispis slike
+  var slika = '<img src="' + data.oMeni.slika + '" alt="' + data.oMeni.slika + '" />';
+  $('.o-meni-slika').html(slika);
 
   // O nama
   $('.o-nama-naslov').html(data.oNama.naslov);

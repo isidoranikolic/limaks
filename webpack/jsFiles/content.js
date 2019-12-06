@@ -6,7 +6,8 @@ const data = {
   },
   oMeni: {
     naslov: 'O meni',
-    tekst: 'Ja sam Isidora Nikolić, živim u Novoj Pazovi!'
+    tekst: 'Ja sam Isidora Nikolić, živim u Novoj Pazovi. Studiram na višoj ICT školi smer Internet tehnologije.',
+    slika: 'img/isidora.png'
   },
   proizvodi: {
     naslov: 'Proizvodi',
@@ -333,6 +334,10 @@ const data = {
     {
       ime: 'o meni',
       href: 'about.html'
+    },
+    {
+      ime: 'dokumentacija',
+      href: 'dokumentacija.pdf'
     }
   ]
 };
@@ -341,6 +346,10 @@ jQuery(document).ready(function() {
   // O meni
   $('.o-meni-naslov').html(data.oMeni.naslov);
   $('.o-meni-tekst').html(data.oMeni.tekst);
+
+  // ispis slike
+  var slika = `<img src="${data.oMeni.slika}" alt="${data.oMeni.slika}" />`
+  $('.o-meni-slika').html(slika);
 
   // O nama
   $('.o-nama-naslov').html(data.oNama.naslov);
