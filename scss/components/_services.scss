@@ -1,0 +1,9 @@
+#services__block {
+    h3 {
+        display: inline-block;
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

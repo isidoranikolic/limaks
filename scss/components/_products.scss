@@ -1,0 +1,175 @@
+#products__block {
+    padding-bottom: 0;
+    .product {
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 991px) {
+            display: none;
+        }
+        @media (max-width: 1199px) {
+            height: 520px;
+        }
+        @media (min-width: 1200px) {
+            height: 450px;
+        }
+        &-1 {
+            background-image: url('../img/kalolifer/6_9_12_kw/kalolifer (1).jpg');
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
+        }
+        &-2 {
+            background-image: url('../img/drzac/drzac-(1).jpg');
+            @media (max-width: 1199px) {
+                height: 620px;
+            }
+            @media (min-width: 1200px) {
+                height: 580px;
+            }
+        }
+        &-3 {
+            background-image: url('../img/poklopac/poklopac-(1).jpg');
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
+        }
+        &-4 {
+            background-image: url('../img/kutija/kutija-(1).jpg')
+        }
+    }
+    .product-text {
+        @media (max-width: 1199px) {
+            height: 520px;
+        }
+        @media (min-width: 1200px) {
+            height: 450px;
+        }
+        @media (max-width: 991px) {
+            height: auto;
+            padding-bottom: 70px;
+        }
+        color: #333;
+        padding-top: 70px;
+        border: 4px solid $secondary-color;
+        background-size: cover;
+        background-position: center;
+        &-1 {
+            border-left: none;
+            border-bottom: none;
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                padding-bottom: 70px;
+            }
+            @media (max-width: 991px) {
+                span, p {
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service1.jpg');
+            }
+        }
+        &-2 {
+            border-right: none;
+            @media (max-width: 1199px) {
+                height: 620px;
+            }
+            @media (min-width: 1200px) {
+                height: 580px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                padding-bottom: 70px;
+            }
+            @media (max-width: 991px) {
+                span,
+                p {
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service3.jpg');
+            }
+        }
+        &-3 {
+            border-top: none;
+            border-left: none;
+            @media (max-width: 1199px) {
+                height: 560px;
+            }
+            @media (min-width: 1200px) {
+                height: 520px;
+            }
+            @media (max-width: 991px) {
+                height: auto;
+                padding-bottom: 70px;
+            }
+            @media (max-width: 991px) {
+                span,
+                p {
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service2.jpg');
+            }
+        }
+        &-4 {
+            border-right: none;
+            border-top: none;
+            @media (max-width: 991px) {
+                span, p {
+                    color: white;
+                }
+                border: none;
+                background-image: url('../img/service4.jpg');
+            }
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        h3 {
+            position: relative;
+            &.1,
+            &.3 {
+                text-align: left;
+                .red-square {
+                    top: -4px;
+                    left: -60px;
+                    z-index: 1;
+                    @media (max-width: 991px) {
+                        width: 60px;
+                        left: -15px;
+                    }
+                }
+            }
+            &.2,
+            &.4 {
+                text-align: right;
+                .red-square {
+                    top: -4px;
+                    right: -60px;
+                    left: auto;
+                    z-index: 1;
+                    @media (max-width: 991px) {
+                        width: 60px;
+                        right: -15px;
+                    }
+                }
+            }
+            span {
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+}

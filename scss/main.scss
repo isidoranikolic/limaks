@@ -1,0 +1,38 @@
+
+// COMPASS
+@import "compass";
+
+// VENDOR
+@import "vendor/_customVariables.scss";   
+@import "vendor/_bootstrap.scss";
+
+// BASE
+@import "base/variables";
+@import "base/_mixins.scss";
+@import "base/_base.scss";
+
+// LAYOUT
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+// COMPONENTS
+@import "components/header";
+@import "components/_cards.scss";
+@import "components/_form.scss";
+@import "components/phone-menu";
+@import "components/menu";
+@import "components/preloader";
+@import "components/alert";
+@import "components/button";
+@import "components/services";
+@import "components/products";
+@import "components/friends";
+@import "components/fixed-sidebar";
+
+// PAGES
+@import "pages/_inner.scss";
+@import "pages/thank";
+
+// EXTERNAL SCSS
+// @import "external_css/style.scss";
+// @import "external_css/animate.scss";
