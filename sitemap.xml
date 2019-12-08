@@ -1,32 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://limaks.co.rs/</loc>
-  <lastmod>2018-12-17T19:04:41+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://limaks.co.rs/index.html</loc>
-  <lastmod>2018-12-17T19:04:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://limaks.co.rs/img/kalolifer/atest.pdf</loc>
-  <lastmod>2018-12-16T21:45:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://limaks.co.rs/img/drzac/atest.pdf</loc>
-  <lastmod>2018-12-16T21:44:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<?xml version=”1.0” encoding=”UTF-8”?>
+<urlset xsi:schemaLocation=”http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd” xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance” xmlns=”http://www.sitemaps.org/schemas/sitemap/0.9”>
+    <url>
+        <loc>https://isidoranikolic.github.io/limaks/</loc>
+        <lastmod>2019-12-06T21:20:05+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://isidoranikolic.github.io/limaks/index.html</loc>
+        <lastmod>2019-12-06T21:20:05+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+        <url>
+        <loc>https://isidoranikolic.github.io/limaks/about.html</loc>
+        <lastmod>2019-12-06T21:20:05+00:00</lastmod>
+        <priority>0.60</priority>
+    </url>
 </urlset>
